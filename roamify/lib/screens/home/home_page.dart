@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:roamify/screens/home/components/stories.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -16,6 +17,11 @@ class HomePage extends StatelessWidget {
           SvgPicture.asset('assets/ic_directs.svg'),
         ]
       ),
+      body: Column(
+        children: [
+          Stories(),
+        ],
+        ),
     );
   }
 }
